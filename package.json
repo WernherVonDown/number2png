@@ -1,0 +1,17 @@
+{
+  "name": "int2png",
+  "version": "1.0.0",
+  "description": "Test Task",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alekseev Danil",
+  "license": "ISC",
+  "dependencies": {
+    "adler32": "^0.1.7",
+    "buffer-crc32": "^0.2.13",
+    "fs": "0.0.1-security",
+    "zlib": "^1.0.5"
+  }
+}
