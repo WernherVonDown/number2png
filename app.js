@@ -71,11 +71,6 @@ function start(num, callback){
   let idatSize = new Buffer.alloc(4);
   idatSize.writeInt8(4+dataLen, idatSize.length-1);
   let idatStart = new Buffer(['49', '44', '41', '54'].map(el=>parseInt(el, 16)));
-  let zlib = new Buffer(['78', '01'].map(el=>parseInt(el, 16)));
-  let bfinal = new Buffer(['01'].map(el=>parseInt(el, 16)));
-  let len = new Buffer.alloc(2);
-  len.writeInt8(dataLen+1);
-  let lenOfData = new Buffer([len[0],len[1],255-len[0], 255-len[1]])
   let filter = new Buffer(['00'].map(el=>parseInt(el, 16)));
   let adler32 = new Buffer.alloc(4);
   let adlerBuf = Buffer.concat([filter,pixels]);
