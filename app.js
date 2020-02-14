@@ -4,9 +4,8 @@ const fs = require('fs');
 const zlib0 = require('zlib')
 const numbers = require('./numbers.json') // массив с изображениями 5х7 пикселей, где каждый байт - 1 пиксель
 
-let NUMWIDTH = 5; //ширина изображения
-let NUMHEIGHT = 7; // высота изображения
-
+const NUMWIDTHCONST = 5; //ширина изображения
+const NUMHEIGHT = 7; // высота изображения
 let num = process.argv[2]; // Получаем число из аргумента.
 
 //метод делает из многомерного массива одномерный.
@@ -18,7 +17,7 @@ Object.defineProperty(Array.prototype, 'flat', {
     }
 });
 
-if((+num ^ 0) === +num) //проверка на целое число
+if(typeof +num == "number") //проверка на число
   start(num, (result)=>{
     // запись результата в файл
     fs.writeFile("result.png", result,  "binary",function(err) {
@@ -33,15 +32,19 @@ else
 
 function start(num, callback){
   console.log('Вы ввели: '+num);
-  let arr = [], newArr = [];
-  NUMWIDTH *= num.length; //изменяем ширину изображения на кол-во цифр.
+  let arr = [], newArr = [], after = false, col;
+  let NUMWIDTH = NUMWIDTHCONST *num.length; //изменяем ширину изображения на кол-во цифр.
 
   //соединяем изображения различных цифр, чтобы соответсвующие строчки шли друг за другом
   for(let i = 0; i < num.length; i++){
-    let tmpArr = numbers[+num[i]].split(' ').map(el=>parseInt(el,16));
+    //если num[i] это '.', то рисуем ее на предыдущей цифре, переходим на следующую и уменьшаем конечную длину изображения т.к. '.' не рисуется отдельно
+    num[i] == '.' && (newArr[i-1][NUMHEIGHT-2][NUMWIDTHCONST-1]='0', newArr[i-1][NUMHEIGHT-1][NUMWIDTHCONST-1]='0', i++, NUMWIDTH -= NUMWIDTHCONST, after = true)
+    let tmpArr = numbers[num[i]].split(' ').map(el=>parseInt(el,16));
+    col = after?50:0 // установка цвета, after указывает, находимся ли мы после точки. (из-за выбранных настроек доступны только оттенки серого)
+    tmpArr = tmpArr.map(e=>e==0?col:e) //меняем цвет цифры
     let tmp2 = [];
     while(tmpArr.length)
-      tmp2.push(tmpArr.splice(0,5))
+      tmp2.push(tmpArr.splice(0,NUMWIDTHCONST))
     newArr.push(tmp2)
   }
   let tmp = newArr[0].map((col, i) => newArr.map(row => row[i]))
