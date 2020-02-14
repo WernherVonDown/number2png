@@ -1,12 +1,13 @@
-[
- "ff ff ff ff ff ff 0 0 0 ff ff 0 ff 0 ff ff 0 ff 0 ff ff 0 ff 0 ff ff 0 0 0 ff ff ff ff ff ff",
- "ff ff ff ff ff ff ff 0 0 ff ff 0 ff 0 ff ff ff ff 0 ff ff ff ff 0 ff ff ff ff 0 ff ff ff ff ff ff",
- "ff ff ff ff ff ff 0 0 0 ff ff ff ff 0 ff ff ff 0 ff ff ff 0 ff ff ff ff 0 0 0 ff ff ff ff ff ff",
- "ff ff ff ff ff ff 0 0 0 ff ff ff ff 0 ff ff 0 0 0 ff ff ff ff 0 ff ff 0 0 0 ff ff ff ff ff ff",
- "ff ff ff ff ff ff 0 ff 0 ff ff 0 ff 0 ff ff 0 0 0 ff ff ff ff 0 ff ff ff ff 0 ff ff ff ff ff ff",
- "ff ff ff ff ff ff 0 0 0 ff ff 0 ff ff ff ff 0 0 0 ff ff ff ff 0 ff ff 0 0 0 ff ff ff ff ff ff",
- "ff ff ff ff ff ff 0 0 0 ff ff 0 ff ff ff ff 0 0 0 ff ff 0 ff 0 ff ff 0 0 0 ff ff ff ff ff ff",
- "ff ff ff ff ff ff 0 0 0 ff ff ff ff 0 ff ff ff 0 ff ff ff 0 ff ff ff ff 0 ff ff ff ff ff ff ff ff",
- "ff ff ff ff ff ff 0 0 0 ff ff 0 ff 0 ff ff 0 0 0 ff ff 0 ff 0 ff ff 0 0 0 ff ff ff ff ff ff",
- "ff ff ff ff ff ff 0 0 0 ff ff 0 ff 0 ff ff 0 0 0 ff ff ff ff 0 ff ff 0 0 0 ff ff ff ff ff ff"
-]
+{
+ "0":"ff ff ff ff ff ff 0 0 0 ff ff 0 ff 0 ff ff 0 ff 0 ff ff 0 ff 0 ff ff 0 0 0 ff ff ff ff ff ff",
+ "1":"ff ff ff ff ff ff ff 0 0 ff ff 0 ff 0 ff ff ff ff 0 ff ff ff ff 0 ff ff ff ff 0 ff ff ff ff ff ff",
+ "2":"ff ff ff ff ff ff 0 0 0 ff ff ff ff 0 ff ff ff 0 ff ff ff 0 ff ff ff ff 0 0 0 ff ff ff ff ff ff",
+ "3":"ff ff ff ff ff ff 0 0 0 ff ff ff ff 0 ff ff 0 0 0 ff ff ff ff 0 ff ff 0 0 0 ff ff ff ff ff ff",
+ "4":"ff ff ff ff ff ff 0 ff 0 ff ff 0 ff 0 ff ff 0 0 0 ff ff ff ff 0 ff ff ff ff 0 ff ff ff ff ff ff",
+ "5":"ff ff ff ff ff ff 0 0 0 ff ff 0 ff ff ff ff 0 0 0 ff ff ff ff 0 ff ff 0 0 0 ff ff ff ff ff ff",
+ "6":"ff ff ff ff ff ff 0 0 0 ff ff 0 ff ff ff ff 0 0 0 ff ff 0 ff 0 ff ff 0 0 0 ff ff ff ff ff ff",
+ "7":"ff ff ff ff ff ff 0 0 0 ff ff ff ff 0 ff ff ff 0 ff ff ff 0 ff ff ff ff 0 ff ff ff ff ff ff ff ff",
+ "8":"ff ff ff ff ff ff 0 0 0 ff ff 0 ff 0 ff ff 0 0 0 ff ff 0 ff 0 ff ff 0 0 0 ff ff ff ff ff ff",
+ "9":"ff ff ff ff ff ff 0 0 0 ff ff 0 ff 0 ff ff 0 0 0 ff ff ff ff 0 ff ff 0 0 0 ff ff ff ff ff ff",
+ "-":"ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff 0 0 0 0 ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+}
