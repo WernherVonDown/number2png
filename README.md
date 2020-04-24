@@ -7,5 +7,5 @@ $npm install
 Использование:
 $node app.js $number
 
-Вместо $number - целое число.
+Вместо $number - любое число.
 
